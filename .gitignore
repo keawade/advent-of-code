@@ -1,0 +1,7 @@
+# Ignore files without extensions (Compiled executables)
+*
+!/**/
+!*.*
+
+# Ignore compilation files
+*.o
