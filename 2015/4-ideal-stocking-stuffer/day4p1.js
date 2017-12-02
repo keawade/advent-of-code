@@ -1,7 +1,7 @@
 const md5 = require('md5');
 const leftpad = require('leftpad');
 
-const mineAdventCoin = (part1) => {
+const mineAdventCoin = (part1, firstdigits) => {
   let i = 0;
   let output;
   
@@ -15,7 +15,7 @@ const mineAdventCoin = (part1) => {
     const key = part1 + part2;
     output = md5(key);
 
-    if (output.slice(0,5) === '00000') {
+    if (output.slice(0, firstdigits.length) === firstdigits) {
       return part2;
     } else {
       i++;
@@ -23,5 +23,5 @@ const mineAdventCoin = (part1) => {
   }
 };
 
-const value = mineAdventCoin('bgvyzdsv');
-console.log(value);
+console.log('00000', mineAdventCoin('bgvyzdsv', '00000'));
+console.log('000000', mineAdventCoin('bgvyzdsv', '000000'));
