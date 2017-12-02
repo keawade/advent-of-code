@@ -1,4 +1,4 @@
-filename = '../source/day1source.txt'
+filename = './input.txt'
 
 with open(filename) as f:
     source = [line.rstrip('\n') for line in open(filename)]

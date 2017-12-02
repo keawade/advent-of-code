@@ -1,6 +1,6 @@
 var fs = require('fs')
 
-var source = fs.readFileSync('../source/day5source.txt', 'utf8').toString().split('\n')
+var source = fs.readFileSync('./input.txt', 'utf8').toString().split('\n')
 
 var niceStrings1 = source.filter(str => {
   var vowelMatch = str.match(/[aeiou]/g)

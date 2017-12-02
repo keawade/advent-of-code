@@ -1,6 +1,6 @@
 var fs = require('fs')
 
-var source = fs.readFileSync('../source/day2source.txt').toString().split('\n')
+var source = fs.readFileSync('./input.txt').toString().split('\n')
 var end = source.length
 var total = 0
 for (var i = 0; i < end - 1; i++) {

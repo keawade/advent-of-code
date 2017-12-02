@@ -1,5 +1,5 @@
 var fs = require('fs')
-var source = fs.readFileSync('../source/day3source.txt').toString()
+var source = fs.readFileSync('./input.txt').toString()
 var end = source.length
 
 function onlyUnique (value, index, self) {
