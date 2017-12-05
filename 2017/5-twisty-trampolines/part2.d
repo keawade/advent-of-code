@@ -4,7 +4,6 @@ import std.conv;
 import std.algorithm;
 import std.string;
 import std.array;
-import std.math;
 
 void main()
 {
@@ -21,7 +20,16 @@ void main()
   while (!(pos >= max || pos < 0))
   {
     int nextPos = pos + instructions[pos];
-    instructions[pos]++;
+
+    if (instructions[pos] >= 3)
+    {
+      instructions[pos]--;
+    }
+    else
+    {
+      instructions[pos]++;
+    }
+
     pos = nextPos;
     steps++;
   }
