@@ -6,7 +6,7 @@ const input = fs.readFileSync('./input.txt').toString().split('\n').map(l => l.s
 const register = {};
 let largest = 0;
 
-input.map((instruction: string[], index) => {
+input.map((instruction, index) => {
   // Initialize registers
   if (register[instruction[0]] === undefined) {
     register[instruction[0]] = 0;
