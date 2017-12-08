@@ -5,3 +5,7 @@
 
 # Ignore compilation files
 *.o
+
+// Ignore node/yarn files
+node_modules/
+yarn.lock

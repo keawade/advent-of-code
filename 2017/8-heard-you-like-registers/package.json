@@ -1,0 +1,15 @@
+{
+  "name": "8-heard-you-like-registers",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^8.0.57",
+    "typescript": "^2.6.2"
+  },
+  "scripts": {
+    "build": "tsc day8p1.ts",
+    "exec": "node day8p1.js",
+    "start": "npm run build && npm run exec"
+  }
+}
