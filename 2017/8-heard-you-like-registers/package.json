@@ -8,8 +8,8 @@
     "typescript": "^2.6.2"
   },
   "scripts": {
-    "build": "tsc day8p1.ts",
-    "exec": "node day8p1.js",
+    "build": "tsc day8p1.ts && tsc day8p2.ts",
+    "exec": "node day8p1.js && node day8p2.js",
     "start": "npm run build && npm run exec"
   }
 }
