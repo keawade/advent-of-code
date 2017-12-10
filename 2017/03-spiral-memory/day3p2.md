@@ -1,6 +1,13 @@
-https://oeis.org/A141481
-#A141481: Square spiral of sums of selected preceding terms, starting at 1..
-#Table of n, a(n) for n = 1..961
+## Day 3 Part 2
+
+Solved by looking up the value in the integer sequence.
+
+Source: https://oeis.org/A141481
+
+A141481: Square spiral of sums of selected preceding terms, starting at 1..
+Table of n, a(n) for n = 1..62
+
+```
 1 1
 2 1
 3 2
@@ -63,3 +70,4 @@ https://oeis.org/A141481
 60 295229
 61 312453
 62 330785
+```
