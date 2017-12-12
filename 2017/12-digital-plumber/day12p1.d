@@ -3,8 +3,6 @@ import std.file;
 import std.string;
 import std.array;
 import std.algorithm;
-
-// import std.math;
 import std.conv;
 
 void main()
