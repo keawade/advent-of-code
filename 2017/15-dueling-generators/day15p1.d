@@ -19,10 +19,12 @@ void main()
   // https://en.wikipedia.org/wiki/Lehmer_random_number_generator
 
   // Create minimal standard generator with multiplier 16807
+  // https://dlang.org/phobos/std_random.html#.MinstdRand0
   auto generator_a = MinstdRand0(seed_a);
 
   // Create minimal standard generator with multiplier 48271
   // Better pseudo-random output according to Park-Miller in response to criticism of the original formula.
+  // https://dlang.org/phobos/std_random.html#.MinstdRand
   auto generator_b = MinstdRand(seed_b);
 
   // `zip` takes two ranges and zips them together as a range of data pairs.
@@ -40,3 +42,6 @@ void main()
   // Write the output to the console.
     .writeln;
 }
+
+// Learned a lot on this one. Attempted to build generators myself, got frustrated, and checked existing solutions to see if I was on the right track.
+// Followed along with /u/GassaFM's solution and learned a lot about D and these generators.
