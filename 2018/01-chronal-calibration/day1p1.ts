@@ -7,6 +7,6 @@ const initialFrequency = 0;
 
 const frequency = input.reduce((prev, curr) => (
   curr[0] === '+' ? prev + curr[1] : prev - curr[1]
-), 0)
+), initialFrequency)
 
 console.log(frequency);
