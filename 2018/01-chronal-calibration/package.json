@@ -1,0 +1,16 @@
+{
+  "name": "01-chronal-calibration",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "build": "tsc day1p1.ts",
+    "exec": "node day1p1.js",
+    "start": "npm run build && npm run exec"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.11",
+    "typescript": "^3.2.1"
+  }
+}
