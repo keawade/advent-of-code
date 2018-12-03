@@ -9,4 +9,4 @@ const frequency = input.reduce((prev, curr) => (
   curr[0] === '+' ? prev + curr[1] : prev - curr[1]
 ), initialFrequency)
 
-console.log(frequency);
+console.log('The frequency is:', frequency);

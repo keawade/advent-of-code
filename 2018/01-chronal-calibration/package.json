@@ -5,8 +5,8 @@
   "license": "MIT",
   "dependencies": {},
   "scripts": {
-    "build": "tsc day1p1.ts",
-    "exec": "node day1p1.js",
+    "build": "tsc day1p1.ts && tsc --lib 'esnext' day1p2.ts",
+    "exec": "node day1p1.js && node day1p2.js",
     "start": "npm run build && npm run exec"
   },
   "devDependencies": {
