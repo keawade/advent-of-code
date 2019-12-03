@@ -1,0 +1,16 @@
+{
+  "name": "03-crossed-wires",
+  "version": "1.0.0",
+  "description": "The gravity assist was successful, and you're well on your way to the Venus refuelling station. During the rush back on Earth, the fuel management system wasn't completely installed, so that's next on the priority list.",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node d3p1.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.2"
+  }
+}
