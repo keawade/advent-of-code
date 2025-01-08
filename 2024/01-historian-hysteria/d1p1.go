@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"errors"
 	"fmt"
 	"log"
 	"os"
@@ -15,7 +16,7 @@ type pair struct {
 
 func zip(a, b []int) ([]pair, error) {
 	if len(a) != len(b) {
-		log.Fatal("Check your inputs, array lengths don't match!")
+		return nil, errors.New("Check your inputs, array lengths don't match!")
 	}
 
 	r := make([]pair, len(a), len(a))
